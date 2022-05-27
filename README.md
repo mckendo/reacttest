@@ -1,5 +1,29 @@
 # Getting Started with Create React App
 
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:mckendo/htmltest.git
+git push -u origin main
+
+
+npm i gh-pages
+
+package.json
+"homepage": "https://mckendo.github.io/reacttest/"
+
+  "scripts": {
+    ...
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    ...
+  },
+
+npm run deploy
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
